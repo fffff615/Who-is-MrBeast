@@ -1,0 +1,33 @@
+body{
+    background-color: #a7edff
+}
+
+h1{
+    color: #046b9e;
+    font-family: "Lilita One", serif;
+    text-align: center;
+   font-size: 50px;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  border: #034771 4px solid;
+  border-radius: 999px;
+}
+p{
+    color: #034771;
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 26px;
+}
+a{
+    color: #034771;
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 26px;
+}
