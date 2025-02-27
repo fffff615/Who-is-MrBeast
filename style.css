@@ -31,3 +31,19 @@ a{
     text-align: center;
     font-size: 26px;
 }
+
+strong{
+    color: #03395b;
+    font-family: "Roboto", serif;
+    font-weight: 1100;
+    text-align: center;
+    font-size: 26px;
+}
+
+li{
+    color: #03395b;
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 26px;
+}
