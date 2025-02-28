@@ -106,13 +106,13 @@ a:hover::after {
     position: relative;
   
     animation: slidein 5s forwards, appear 3s forwards;
-    animation-delay: 2s;
+    
    
 }
 @keyframes slidein {
  
 
-        to{transform: translateX(center)};
+        to{transform: translateX(200)};
     
 }
 
