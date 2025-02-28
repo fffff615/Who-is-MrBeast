@@ -7,15 +7,32 @@ h1{
     font-family: "Lilita One", serif;
     text-align: center;
    font-size: 50px;
+   transition: transform 0.3s ease-in-out;
+   position: relative;
+   animation: scaleAnimation 2s infinite;
+}
+@keyframes scaleAnimation {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.08);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 
 img{
+    display: inline-block;
     display: block;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
   border: #034771 4px solid;
   border-radius: 999px;
+  transition: transform 0.3s ease-in-out;
 }
 p{
     color: #034771;
@@ -23,13 +40,16 @@ p{
     font-weight: 700;
     text-align: center;
     font-size: 26px;
+ 
 }
 a{
+    display: inline-block;
     color: #034771;
     font-family: "Roboto", serif;
     font-weight: 700;
     text-align: center;
     font-size: 26px;
+    transition: transform 0.3s ease-in-out;
 }
 
 strong{
@@ -46,4 +66,77 @@ li{
     font-weight: 700;
     text-align: center;
     font-size: 26px;
+}
+ul{
+    color: #03395b;
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 26px;
+}
+ol{
+    color: #03395b;
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 26px;
+}
+a:hover{
+    animation: colorchange 1s ;
+    color: #06629b;
+    transform: scale(1.03);
+    animation: shake 1s;
+    animation-iteration-count: infinite;
+    transition-property: color;
+transition-duration: 1s;
+transition-timing-function: ease-out;
+   
+  
+  
+
+}
+a:hover::after {
+    content: "🔗"; /* Adds an emoji when hovered */
+}
+
+
+#mrBeast {
+
+    display: inline-block;
+    position: relative;
+  
+    animation: slidein 5s forwards, appear 3s forwards;
+    animation-delay: 2s;
+   
+}
+@keyframes slidein {
+ 
+
+        to{transform: translateX(250px)};
+    
+}
+
+@keyframes appear {
+from {
+    opacity: 0;
+}
+
+    to {
+        transform: translateX(250px);
+        opacity: 1;
+    }
+
+}
+
+h1:hover{
+    animation: colorchange 1s ;
+    color: #06629b;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+@keyframes framesrotate {
+    animation-iteration-count: infinite;
+    transition-property: color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    
 }
