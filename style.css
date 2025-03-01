@@ -33,14 +33,7 @@ img{
   border-radius: 999px;
   transition: transform 0.3s cubic-bezier(0, 2.11, 1,-0.86);
 }
-p{
-    color: #034771;
-    font-family: "Roboto", serif;
-    font-weight: 700;
-    text-align: center;
-    font-size: 26px;
- 
-}
+
 a{
     display: inline-block;
     color: #034771;
@@ -82,7 +75,7 @@ ol{
 }
 a:hover{
     animation: colorchange 1s ;
-    color: #06629b;
+   
     transform: scale(1.03);
     animation: shake 1s;
     animation-iteration-count: infinite;
@@ -90,10 +83,19 @@ a:hover{
 transition-duration: 1s;
 transition-timing-function: ease-out;
    
-  
-  
+
 
 }
+a:hover {
+    animation: colorChange 5s ease-in-out;
+}
+
+@keyframes colorChange {
+    
+    50% { color: rgb(92, 0, 121); } /* Purple */
+    33% { color: rgb(0, 21, 92); } /* Purple */
+}
+
 a:hover::after {
     content: "🔗"; /* Adds an emoji when hovered */
 }
@@ -171,11 +173,45 @@ img:hover{
     animation: slidein 5s forwards, appear 3s forwards;
 }
 
-keyframes slidein {
+@keyframes slidein {
     50 {
         transform: translateX(-100%);
     }
     to {
         transform: translateX(0);
     }
+}
+
+p{
+    color: #034771;
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 26px;
+ 
+}
+
+p:hover{
+    animation: size 5s ;
+    color: #034771;
+    font-family: "Roboto", serif;
+    font-weight: 700;
+ 
+}
+@keyframes size {
+70% {font-size: 35px;}
+}
+li:hover{
+    animation: size 5s ;
+    color: #034771;
+    font-family: "Roboto", serif;
+    font-weight: 700;
+ 
+}
+a:hover{
+    animation: size 5s ;
+    color: #034771;
+    font-family: "Roboto", serif;
+    font-weight: 700;
+ 
 }
