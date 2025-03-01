@@ -200,7 +200,7 @@ p:hover{
  
 }
 @keyframes size {
-70% {font-size: 35px;}
+70% {font-size: 30px;}
 }
 li:hover{
     animation: size 10s ;
