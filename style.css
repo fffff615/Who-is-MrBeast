@@ -106,13 +106,13 @@ a:hover::after {
     display: inline-block;
     position: relative;
   
-    animation: slideInFromCenter 5s forwards, appear 3s forwards;
+    animation: slidein 5s forwards, appear 3s forwards;
     position: relative;
     margin-left: auto;
     margin-right: auto;
    
 }
-@keyframes slideInFromCenter {
+@keyframes slidein {
  
 
         to{transform: translateX(center)};
@@ -192,7 +192,7 @@ p{
 }
 
 p:hover{
-    animation: size 5s ;
+    animation: size 10s ;
     color: #034771;
     font-family: "Roboto", serif;
     font-weight: 700;
@@ -200,18 +200,16 @@ p:hover{
 }
 @keyframes size {
 70% {font-size: 35px;}
-
-
 }
 li:hover{
-    animation: size 5s ;
+    animation: size 10s ;
     color: #034771;
     font-family: "Roboto", serif;
     font-weight: 700;
  
 }
 a:hover{
-    animation: size 5s ;
+    animation: size 10s ;
     color: #034771;
     font-family: "Roboto", serif;
     font-weight: 700;
